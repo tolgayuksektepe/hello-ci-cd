@@ -1,0 +1,23 @@
+name: Python CI
+
+# Workflow tetikleyicileri
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Repo’yu klonla
+      - uses: actions/checkout@v3
+
+      # Python kur
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      # Bağımlılıkları yükle ve test çalıştır
+      - run: pip install pytest
+      - run: pytest
+
