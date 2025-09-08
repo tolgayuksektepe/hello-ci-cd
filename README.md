@@ -6,6 +6,6 @@ Bu proje, Git + GitHub Actions CI/CD pratikleri için örnek bir Python uygulama
 
 1. Clone repo:
 ```bash
-git clone git@github.com:username/hello-ci.git
+git clone git@github.com:username/hello-ci-cd.git
 cd hello-ci
 
