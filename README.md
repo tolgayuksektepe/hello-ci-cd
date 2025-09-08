@@ -9,3 +9,4 @@ Bu proje, Git + GitHub Actions CI/CD pratikleri için örnek bir Python uygulama
 git clone git@github.com:username/hello-ci.git
 cd hello-ci
 
+# trigger pipeline
